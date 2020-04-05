@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <!-- 為了取得要被刪除的 quote，必須於 v-for 加上每個 quote 所在的 index -->
-        <app-quote v-for="(quote, index) in quotes" @click.native="deleteQuote(index)">{{ quote }}</app-quote>
+        <app-quote v-for="(quote, index) in quotes" :key="index" @click.native="deleteQuote(index)">{{ quote }}</app-quote>
     </div>
 </template>
 
