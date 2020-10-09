@@ -9,7 +9,7 @@
     import Quote from './Quote';
 
     export default {
-        props: { // 也可以寫成 props: [quotes]
+        props: { // 也可以寫成 props: ['quotes']
             quotes: {
                 type: Array
             }
