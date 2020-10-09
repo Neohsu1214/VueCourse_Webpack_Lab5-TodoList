@@ -16,7 +16,7 @@
 
 <script>
     export default {
-        date: function() {
+        data: function() {
             return {
                 quote: ''
             }
